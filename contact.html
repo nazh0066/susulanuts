@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <title>Contact Us</title>
+    <!-- my style -->
+    <style>
+      .bg75 {
+        background-color: rgb(113, 186, 4);
+      }
+      .navbar1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+      }
+      .ulli {
+        margin: 2px;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+      }
+      .ulli li {
+        display: inline;
+      }
+      .ulli a {
+        color: white;
+        text-decoration: none;
+      }
+      .ulli a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <!-- end style -->
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar1 text-white bg75 p-2 m-7">
+      <p class="container-custom">Raihan <span>0066</span></p>
+      <h3 class="container-custom"><b>American Food</b></h3>
+      <ul class="ulli">
+        <li><a href="index.html">Main Menu</a></li>
+        <li><a href="bringback.html">menu</a></li>
+      </ul>
+    </div>
+    <!-- end of navbar -->
+    <!-- Contact Form -->
+    <div class="container mt-5">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" placeholder="Subject" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- End of Contact Form -->
+  </body>
+</html>
